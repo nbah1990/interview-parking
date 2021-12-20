@@ -1,0 +1,28 @@
+FROM php:8.0-fpm
+
+WORKDIR /var/www
+
+#general update
+RUN apt-get update -y && apt-get upgrade -y
+
+#
+RUN apt-get install -y libzip-dev zip
+
+#mcrypt
+RUN apt-get -y install libmcrypt-dev
+RUN pecl install mcrypt-1.0.4 && docker-php-ext-enable mcrypt
+
+#exif
+RUN docker-php-ext-install exif
+
+#composer
+RUN curl -s https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
+
+#rsync
+RUN apt-get install -y rsync
+
+#xdebug
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug
+
+COPY ./php/ "$PHP_INI_DIR/conf.d/"

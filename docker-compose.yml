@@ -1,0 +1,13 @@
+version: '3'
+services:
+  test-environment:
+    build:
+      context: ./docker
+      dockerfile: test-environment.docker
+    volumes:
+      - ./:/var/www
+    working_dir: /var/www
+    expose:
+      - "9003"
+    ports:
+      - "9003:9003"
