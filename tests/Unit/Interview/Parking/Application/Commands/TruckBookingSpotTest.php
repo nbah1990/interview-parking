@@ -12,7 +12,7 @@ use App\Interview\Parking\Domain\ValueObjects\Uuid;
 use Mockery\MockInterface;
 use Tests\TestCase;
 
-class TrackBookingSpotTest extends TestCase
+class TruckBookingSpotTest extends TestCase
 {
     public function test_it_books_spots_for_trucks(): void
     {
