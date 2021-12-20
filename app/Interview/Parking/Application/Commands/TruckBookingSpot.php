@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Interview\Parking\Applications\Commands;
+namespace App\Interview\Parking\Application\Commands;
 
-use App\Interview\Parking\Applications\Dto\BookingSpotDto;
+use App\Interview\Parking\Application\Dto\BookingSpotDto;
 use App\Interview\Parking\Domain\Contracts\ParkingRepository;
 use App\Interview\Parking\Domain\Exception\NotEnoughFreeSpots;
 use App\Interview\Parking\Domain\Exception\ParkingNotFound;

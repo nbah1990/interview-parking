@@ -2,8 +2,8 @@
 
 namespace Interview\Parking\Application\Commands;
 
-use App\Interview\Parking\Applications\Commands\CarBookingSpot;
-use App\Interview\Parking\Applications\Dto\BookingSpotDto;
+use App\Interview\Parking\Application\Commands\CarBookingSpot;
+use App\Interview\Parking\Application\Dto\BookingSpotDto;
 use App\Interview\Parking\Domain\Contracts\ParkingRepository;
 use App\Interview\Parking\Domain\Entities\FloorCollection;
 use App\Interview\Parking\Domain\Entities\Parking;

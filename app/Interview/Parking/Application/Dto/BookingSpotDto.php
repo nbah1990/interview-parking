@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Interview\Parking\Applications\Dto;
+namespace App\Interview\Parking\Application\Dto;
 
 use App\Interview\Parking\Domain\ValueObjects\Uuid;
 
